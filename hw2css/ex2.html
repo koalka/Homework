@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ex2</title>
+        <link type="text/css" rel="stylesheet" href="ex2.css"/>
+        <script type="text/javascript">
+            var datefield = document.createElement("input")
+            datefield.setAttribute("type", "date")
+            if (datefield.type != "date") { //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+                document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
+                document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>\n')
+                document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n')
+            }
+        </script>
+
+        <script>
+            if (datefield.type != "date") { //if browser doesn't support input type="date", initialize date picker widget:
+                jQuery(function ($) { //on document.ready
+                    $('#birthday').datepicker();
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <div class="form">
+            <div class="header">Sign Up</div>
+            <form name="register" action="" method="post">
+                <ul>
+                    <li class="left"><label for="un">Username:</label></li>
+                    <li class="right"><input type="text" name="username" id="un"/></li>
+                    <li class="left"><label for="ps">Password:</label></li>
+                    <li class="right"><input type="password" name="pass1" id="ps"/></li>
+                    <li class="left"><label for="rps">Retype password:</label></li>
+                    <li class="right"><input type="password" name="pass2" id="rps"/></li>
+                    <li class="left"><label for="birthday">Date of birth:</label></li>
+                    <li  class="right"><input type="date" name="birthday" id="birthday"/></li>
+                    <li class="left">Gender:</li>
+                    <li class="right">
+                        <input type="radio" name="gender" value="male" id="male"/>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="female" id="female"/>
+                        <label for="female">Female</label>
+                    </li>
+                    <li class="left"><label for="home">Home Address:</label></li>
+                    <li class="right"><input type="text" name="homeaddress" id="home"/></li>
+                    <li class="left"><label for="work">Work Address:</label></li>
+                    <li class="right"><input type="text" name="workaddress" id="work"/></li>
+                    <li class="left"><label for="school">School Name:</label></li>
+                    <li class="right"><input type="text" name="school" id="school"/></li>
+                    <li class="left"><label for="start">Years of education:</label></li>
+                    <li class="right"><input type="month" name="startschool" id="start"/></li>
+                    <li class="left"><label for="end">to:</label></li>
+                    <li class="right"><input type="month" name="endschool" id="end"/></li>
+                    <li class="left"><label for="phone">Phone number:</label></li>
+                    <li class="right"><input type="tel" name="phone" id="phone"/></li>
+                    <li class="left"><label for="email">e-mail:</label></li>
+                    <li class="right"><input type="email" name="email" id="email"/></li>
+                    <li class="left"><label for="comments">Additional notes:</label></li>
+                    <li class="right"><textarea name="comments" id="comments"></textarea></li>
+                    <li class="left">
+                        &nbsp;
+                    </li>
+                    <li class="right">
+                        <input type="checkbox" name="checkbox" value="check" id="check"/> <label for="check">I agree to the <a href="http://www.example.org">Terms of Use</a></label>
+                    </li>
+                    <li class="clearfix"></li>
+                </ul>
+                <div class="clearfix"></div>
+                <div class="footer">
+                    <input type="submit" id="submit" value="Submit"/>
+                </div> 
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+nav {
+    background: #343535;
+    color: white;
+}
+
+nav a {
+    display: block;
+    padding: 1em;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+.right {
+    float: right;
+}
+
+.about {
+    background: #00b053;
+}
+
+a:hover {
+    background: rgba(143, 224, 181, .5);
+}

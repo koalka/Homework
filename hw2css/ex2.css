@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+li  {
+    list-style: none;
+    padding-bottom: 0.3em;
+}
+body {
+    background: #a5efd1;
+}
+ul {
+  padding: 0;
+}
+.form {
+    margin: 2em auto;
+    width: 40%;
+    border: 2px solid white;
+    border-radius: 2px;
+    background: azure;
+    overflow: hidden;
+    font-family: verdana;
+    color: #207553;
+
+}
+
+.left {
+    float: left;
+    width: 45%;
+    clear: left;
+    text-align: right;
+    padding-right: 1.5em;
+}
+.right {
+    float: left;
+    width: 55%;
+   
+}
+.header {
+    background: bisque;
+    padding: 1em;
+    border-bottom: 2px solid white;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: darkred; 
+    margin-bottom: 2em;
+
+}
+.footer {
+    background: bisque;
+    padding: 1em;
+    border-top: 2px solid white;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    float: left;
+    width: 100%;
+    margin-top: 2em;
+}
+#submit {
+    border: 2px solid white;
+    border-radius: 2px;
+    background: #a5efd1;
+    padding: 0.3em;
+    text-transform: uppercase;
+    float: right;
+    color: darkred;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 1em;
+}
+.clearfix
+{
+    clear: both;
+}
+input[type="text"], input[type="password"], input[type="date"], input[type="tel"], input[type="month"], input[type="email"], textarea {
+    width: 90%;
+}

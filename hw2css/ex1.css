@@ -1,0 +1,44 @@
+img {
+    max-width: 80%;
+    height: auto;
+}
+.cv {
+    width: 60%;
+    min-width: 320px;
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+    width: 27%;
+    clear: left;
+    font-weight: bold;
+}
+.right {
+    float: left;
+    width: 73%;
+    border-left: 1px solid black;
+
+}
+.left, .right {
+    padding-bottom: 1.75em;
+    box-sizing: border-box;
+}
+.first.right {
+    border-left: none;
+}
+.first.left {
+    border-right: 1px solid black;
+    position: relative;
+    left: 1px;
+}
+.last {
+    padding-bottom: 0;
+}
+ul {
+    margin: 0;
+}
+li {
+    list-style: none;
+    padding-bottom: 0.5em;
+}

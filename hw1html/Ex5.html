@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ex5</title>
+	</head>
+	<body>
+	    <style>
+	        li  {
+	            list-style:none;
+	        }
+	    </style>
+        <h3>Register form</h3>
+        <form name="register" action="" method="post">
+            <ul>
+                <li><label for="un">Username:</label></li>
+                <li><input type="text" name="username" id="un"/></li>
+                <li><label for="ps">Password:</label></li>
+                <li><input type="password" name="pass1" id="ps"/></li>
+                <li><label for="rps">Retype password:</label></li>
+                <li><input type="password" name="pass2" id="rps"/></li>
+                <li><label for="bday">Date of birth:</label></li>
+                <li><input type="date" name="birthday" id="bday"/></li>
+                <li>Gender</li>
+                <li>
+                    <input type="radio" name="gender" value="male" id="male"/>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female" id="female"/>
+                    <label for="female">Female</label>
+                </li>
+                <li><label for="home">Home Address:</label></li>
+                <li><input type="text" name="homeaddress" id="home"/></li>
+                <li><label for="work">Work Address:</label></li>
+                <li><input type="text" name="workaddress" id="work"/></li>
+                <li><label for="school">School Name:</label></li>
+                <li><input type="text" name="school" id="school"/></li>
+                <li><label for="start">Years of education:</label></li>
+                <li>
+                    <input type="month" name="startschool" id="start"/> 
+                    <label for="end">to</label>
+                    <input type="month" name="endschool" id="end"/>
+                </li>
+                <li><label for="phone">Phone number:</label></li>
+                <li><input type="tel" name="phone" id="phone"/></li>
+                <li><label for="email">e-mail:</label></li>
+                <li><input type="email" name="email" id="email"/></li>
+                <li><label for="comments">Additional notes:</label></li>
+                <li><textarea name="comments" id="comments" cols="30" rows="5"></textarea></li>
+                <li>
+		    <input type="checkbox" name="checkbox" value="check" id="check"/>
+		    <label for="check">I accept the <a href="http://www.example.org">Terms and Conditions</a></label>
+		</li>
+                <li><input type="submit" value="Submit"/></li>
+          </ul>
+        </form>
+	</body>
+</html>

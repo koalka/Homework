@@ -1,0 +1,42 @@
+body {
+    font-family: arial;
+}
+h2 {
+    font-family: impact;
+    font-weight: lighter;
+}
+time {
+  color: #c2ff30;
+}
+p {
+    padding: 0 1.5em 0.8em;
+}
+.wrapper {
+    max-width:440px;
+}
+.cover {
+    max-width: 100%;
+    height: auto;
+}
+.subheader {
+    width: 90%;
+}
+.leave-comment {
+  float: right;
+  color: grey;
+}
+.read {
+    float: right;
+    background: #c2ff30;
+    padding: 0.4em;
+    color: white;
+}
+.icon {
+  width: 1em;
+  heigh: 1em;
+  position: relative;
+  top: 2px; 
+}
+.comments {
+    opacity: 0.5;
+}
