@@ -1,0 +1,22 @@
+INSERT INTO students_subjects (student_id, subject_id) 
+SELECT students.student_id, subjects.subject_id 
+FROM students 
+CROSS JOIN subjects
+
+SELECT subjects.name as 'Subject', students.first_name as 'First Name', students.last_name AS 'Last Name', grades.grade as 'Grade'
+FROM subjects 
+INNER JOIN students_subjects ON subjects.subject_id = students_subjects.subject_id 
+INNER JOIN students ON students.student_id = students_subjects.student_id 
+INNER JOIN students_subjects_grades ON students_subjects_grades.student_subject_id = students_subjects.student_subject_id 
+INNER JOIN grades ON students_subjects_grades.grades_id = grades.grade_id 
+WHERE subjects.subject_id = 1 
+ORDER BY grades.grade DESC
+
+SELECT subjects.name as 'Subject', students.first_name as 'First Name', students.last_name AS 'Last Name', grades.grade as 'Grade'
+FROM subjects 
+INNER JOIN students_subjects ON subjects.subject_id = students_subjects.subject_id 
+INNER JOIN students ON students.student_id = students_subjects.student_id 
+INNER JOIN students_subjects_grades ON students_subjects_grades.student_subject_id = students_subjects.student_subject_id 
+INNER JOIN grades ON students_subjects_grades.grades_id = grades.grade_id 
+WHERE subjects.subject_id = 2
+AND grades.grade_id = 1;
